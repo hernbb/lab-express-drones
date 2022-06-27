@@ -1,16 +1,16 @@
 <h2 style="color: blueviolet;">Available drones</h2>
-<p>
+<div style="display:flex; justify-content:center; flex-direction:column; align-items:flex-start">
     {{#each response}}
 
     <h3>{{name}}</h3>
     <p>Propellers: {{propellers}}</p>
     <p>Max speed: {{maxSpeed}}</p>
     <a href="/drones/{{id}}/edit">Edit</a>
-    <form action="/drones/{{id}}/delete" method="post" style="">
+    <form action="/drones/{{id}}/delete" method="post">
         <button type="submit">Delete</button>
     </form>
    
     
     {{/each}}
  
-</p>
+</div>
